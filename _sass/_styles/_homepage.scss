@@ -1,0 +1,17 @@
+// **********
+// HOME PAGE STYLES
+// **********
+#homepage-header {
+	background: transparent url(/images/swirls-background.png) no-repeat center;
+	margin-top: -81px;
+	padding-top: 60px;
+
+	.jumbotron {
+		background-color: rgba(0, 0, 0, .8);
+		margin-bottom: 0;
+	}
+
+	.jumbotron > p, .jumbotron > h1, .jumbotron > h2 {
+		text-align: center;
+	}
+}

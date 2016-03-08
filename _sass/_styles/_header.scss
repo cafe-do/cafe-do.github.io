@@ -1,1 +1,10 @@
-.navbar-brand { padding: 10px 15px; }
+// **********
+// SITE HEADER
+// **********
+.navbar {
+	background-color: rgba(0, 0, 0, .8);
+
+	.navbar-brand {
+		padding: 10px 15px;
+	}
+}
