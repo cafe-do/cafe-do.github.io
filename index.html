@@ -1,23 +1,25 @@
 ---
 layout: homepage
+base: http://www.madebyfaculty.co.uk/
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <section class="jobs-section">
+    <h2 class="section-heading">&Uacute;ltimos Trabalhos</h2>
+    <ul class="jobs-list">
+      {% for post in site.posts %}
+        {% if post.categories contains 'jobs' %}
+        <li class="col-sm-6 col-xs-12 jobs-item job-{{ post.id }}">
+          <div class="job-image" style="background-image: url({{ post.featured-image | prepend: site.baseurl }})"></div>
+          <h3>
+            <a class="job-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <span class="job-categories">{{ post.job-categories }}</span>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
 
 </div>
