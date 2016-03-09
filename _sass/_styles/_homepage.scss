@@ -7,11 +7,51 @@
 	padding-top: 60px;
 
 	.jumbotron {
-		background-color: rgba(0, 0, 0, .8);
+		background-color: rgba(0, 0, 0, .75);
 		margin-bottom: 0;
 	}
 
 	.jumbotron > p, .jumbotron > h1, .jumbotron > h2 {
 		text-align: center;
+	}
+}
+
+.jobs-section {
+	ul{ padding: 0; }
+	
+	li {
+		height: 250px;
+	    padding: 0;
+	    margin-bottom: 20px;
+	    list-style: none;
+	    float: left;
+
+	    &:nth-child(even) .job-item {
+	    	float: right;
+	    }
+	}
+
+	.job-item {
+    	height: 100%;
+		position: relative;
+    	background-position: center;
+    }
+
+	.job-title {
+		padding: 20px;
+		margin: 80px 0 0 0;
+		display: inline-block;
+		
+		background-color: rgba(0, 0, 0, .5);
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.jobs-section {
+		li { height: 150px; }
+		.job-title { 
+			padding: 10px;
+			margin-top: 30px;
+		}
 	}
 }

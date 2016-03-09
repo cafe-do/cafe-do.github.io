@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Rei de Salém"
+title:  "Plásticos Líder"
 id: "reidesalem"
 date:   2016-02-23
 categories: jobs
-tags: marca e-commerce design
+tags: marca catálogo_online
 featured-image: /images/jobs/reidesalem-job.png
 ---
 
-Rei de Salém
+Plásticos Líder
