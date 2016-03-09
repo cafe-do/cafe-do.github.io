@@ -52,6 +52,35 @@
 	}
 }
 
+#homepage .services-section {
+	.service-design .panel-heading {
+		background-color: $panel-primary-heading-bg;
+		color: $panel-primary-text;
+	}
+
+	.service-web .panel-heading {
+		background-color: $panel-success-heading-bg;
+		color: $panel-success-text;
+	}
+
+	.service-brand .panel-heading {
+		background-color: $panel-info-heading-bg;
+		color: $panel-info-text;
+	}
+}
+
+#homepage .contact-section {
+	.contact-message .panel-heading {
+		background-color: $panel-default-heading-bg;
+		color: $panel-default-text;
+	}
+
+	.contact-hire {
+		background-color: $panel-danger-heading-bg;
+		color: $panel-danger-text;
+	}
+}
+
 @media (max-width: $screen-xs-max) {
 	#homepage .jobs-section {
 		li { height: 150px; }
