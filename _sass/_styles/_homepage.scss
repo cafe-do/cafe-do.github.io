@@ -28,16 +28,15 @@
 #homepage .jobs-section {
 	li {
 		height: 250px;
-	    padding: 0;
+	    padding: 0 10px 0 0;
 	    margin-bottom: 20px;
-	    float: left;
 
-	    &:nth-child(even) .job-item {
-	    	float: right;
+	    &:nth-child(even) {
+	    	padding: 0 0 0 10px;
 	    }
 	}
 
-	.job-item {
+	.job-image {
     	height: 100%;
 		position: relative;
     	background-position: center;
@@ -83,7 +82,10 @@
 
 @media (max-width: $screen-xs-max) {
 	#homepage .jobs-section {
-		li { height: 150px; }
+		li, li:nth-child(even) { 
+			height: 150px;
+			padding: 0;
+		}
 		.job-title { 
 			padding: 10px;
 			margin-top: 30px;
