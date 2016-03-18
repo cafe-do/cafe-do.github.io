@@ -9,10 +9,10 @@
 title: café-do
 email: contact@cafe-do.com
 description: > # '>' means to ignore newlines until the next property
-  #Write an awesome description for your new site here. You can edit this
-  #line in _config.yml. It will appear in your document head meta (for
-  #Google search results) and in your feed.xml site description.
-  Change here
+  Design, Web, e fortalecimento de Marca.
+  Extraímos o melhor de cada projeto, colaborando com criatividade para aumentar 
+  a visibilidade no mercado e as vendas de nossos clientes, na internet e fora dela.
+# Onde há café há criatividade
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cafe-do.com" # the base hostname & protocol for your site
 
