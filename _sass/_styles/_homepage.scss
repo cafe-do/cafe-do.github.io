@@ -13,6 +13,8 @@
 }
 
 #homepage section {
+	margin-bottom: 50px;
+
 	ul{ padding: 0; }
 	
 	li {
@@ -65,14 +67,28 @@
 }
 
 #homepage .contact-section {
-	.contact-message .panel-heading {
-		background-color: $panel-default-heading-bg;
-		color: $panel-default-text;
+	.contact-message {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.contact-hire {
 		background-color: $panel-danger-heading-bg;
 		color: $panel-danger-text;
+		padding: 10px;
+		text-align: center;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		.contact-message {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+
+		.contact-hire {
+			padding: 50px;
+			.btn-form { margin-top: 30px; }
+		}
 	}
 }
 
