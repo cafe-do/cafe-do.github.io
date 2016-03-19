@@ -5,7 +5,7 @@ id: "reidesalem"
 date:   2016-02-23
 categories: jobs
 tags: marca catálogo_online
-featured-image: /images/jobs/reidesalem-job.png
+featured-image: /images/jobs/plasticoslider-job.jpg
 ---
 
 Plásticos Líder
