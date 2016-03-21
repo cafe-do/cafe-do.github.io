@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
   {% include head.html %}
 
   <body>
 
-    {% include header.html %}
+    {% include sidebar-menu.html %}
 
-    <div id="main-content" class="container-fluid">
-      {{ content }}
-    </div>
+	{{ content }}
 
     {% include footer.html %}
-    {% include scripts.html %}
+    {% include scripts-body.html %}
 
   </body>
 

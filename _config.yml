@@ -5,19 +5,117 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+# Build settings
+markdown: kramdown
+sass:
+  style: :compressed
+
 # Site settings
-title: café-do | design, web, e fortalecimento de marca
-email: contato@cafe-do.com
-description: > # '>' means to ignore newlines until the next property
-  Design, web, e fortalecimento de marca.
-  Extraímos o melhor de cada projeto, colaborando com criatividade para aumentar 
-  a visibilidade no mercado e as vendas de nossos clientes, na internet e fora dela.
-# Onde há café há criatividade
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cafe-do.com" # the base hostname & protocol for your site
 
-# Build settings
-markdown: kramdown
+# Site properties
+title: café-do | design, web, e fortalecimento de marca
+company_name: café-do
+hide_company_name: true
+logo_image_url: /images/logo.svg
+logo_image_width: 300
+email: contato@cafe-do.com
+phone_number: +55 (31) 3447-9878
+author: café-do | http://cafe-do.com
+description: > # '>' means to ignore newlines until the next property
+  design, web, e fortalecimento de marca.
+  Extraímos o melhor de cada projeto, colaborando com criatividade para aumentar 
+  a visibilidade no mercado e as vendas de nossos clientes, na internet e fora dela.
 
-sass:
-  style: :compressed
+# Menu properties
+menu_home: Home
+menu_about: Sobre
+menu_services: Servi&ccedil;os
+menu_portfolio: Portf&oacute;lio
+menu_contact: Contato
+
+# Jumbotron properties
+jumbotron_short_text: >
+  Design, web, e fortalecimento de marca.
+jumbotron_long_text:
+jumbotron_call_to_action: Descubra mais
+jumbotron_call_to_action_action: \#about
+
+# About properties
+about_title: Extraímos o melhor de cada projeto
+about_text: >
+  colaborando com criatividade para aumentar a visibilidade
+  no mercado e as vendas de nossos clientes, na internet e fora dela.
+
+# Services properties
+services_title: Servi&ccedil;os
+services_action_text: saiba mais
+
+services_design_icon_class: fa-paint-brush
+services_design_title: design gr&aacute;fico
+services_design_text: >
+  logomarcas e todos os tipos de arte impressa. 
+  desde seu cart&atilde;o de visita, panfletos e flyers at&eacute; 
+  silks para carros e outdoors
+services_design_action: /design-grafico
+
+services_web_icon_class: fa-cloud
+services_web_title: webdesign e sites
+services_web_text: >
+  na internet o que mais importa &eacute; como o visitante se sente
+  em seu site. por isso, n&oacute;s n&atilde;o s&oacute; desenhamos os 
+  elementos gr&aacute;ficos e escrevemos linhas de c&oacute;digo, mas 
+  fazemos seu visitante amar seu site
+services_web_action: /web
+
+services_branding_icon_class: fa-shield
+services_branding_title: fortalecimento de marcas
+services_branding_text: >
+  ajudamos a fortalecer sua marca no mercado pensando com
+  criatividade para sua marca alcan&ccedil;ar novos clientes
+
+services_branding_action: /branding
+
+# Portfolio properties
+portfolio_title: Portf&oacute;lio
+portfolio_view_more: Ver mais trabalhos
+
+# Callout properties
+call_out_text: Projetos feitos sob medida
+
+# Call To Action properties
+calltoaction_title: Tem um projeto para ser executado?
+calltoaction_text: > 
+  Preencha o formul&aacute;rio e entraremos em contato... 
+  n&atilde;o demora mais que colocar a &aacute;gua pra ferver!
+calltoaction_button_text: Preencher forml&aacute;rio
+calltoaction_button_class: btn-dark # accept any bootstrap button style class, but usually 'btn-dark' or 'btn-light'
+calltoaction_button_action: https://docs.google.com/forms/d/10aivslAIEKK7CPpZ25d7ggk5T3SeTLg6cVqXZq03Gp4/viewform
+calltoaction_button_target: _blank
+
+# Map properties
+map_url: https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A
+map_link_text: Ver no Google Maps
+
+# Footer properties
+address_title: café-do
+address_line1: Rua Arnaldo Louren&ccedil;o
+address_line2: Pousada Santo Ant&ocirc;nio
+address_line3: Minas Gerais - Brasil
+copyright_text: extra&iacute;do com &hearts; | 
+
+# Contact Form properties
+contact_form_title: fale com a gente
+contact_form_name_label: nome
+contact_form_name_placeholder: Seu nome aqui
+contact_form_email_label: e-mail
+contact_form_email_placeholder: voce@email.com
+contact_form_message_label: mensagem
+contact_form_reset_button_text: limpar
+contact_form_send_button_text: enviar
+
+# Social Networks properties
+facebook_username: cafebrandingdesign
+twitter_username: 
+github_username: 

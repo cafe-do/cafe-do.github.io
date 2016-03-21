@@ -1,0 +1,12 @@
+<header id="top" class="header">
+  <div class="text-vertical-center">
+    <h1 class="{% if site.hide_company_name %}hidden{% endif %}">{{ site.company_name }}</h1>
+    {% if site.logo_image_url %}<img class="img-logo" src="{{ site.logo_image_url | prepend: site.baseurl }}" width="{{ site.logo_image_width }}">{% endif %}
+    <h2>{{ site.jumbotron_short_text }}</h2>
+    {% if site.jumbotron_long_text %}
+    <p>{{ site.jumbotron_long_text }}</p>
+    {% endif %}
+    <br>
+    <a href="{{ site.jumbotron_call_to_action_action }}" class="btn btn-dark btn-lg">{{ site.jumbotron_call_to_action }}</a>
+  </div>
+</header>
