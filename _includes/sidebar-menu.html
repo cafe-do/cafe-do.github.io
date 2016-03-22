@@ -4,22 +4,22 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top"  onclick="$('#menu-close').click();"><img src="{{ site.logo_image_url | prepend: site.baseurl }}" width="75px"></a>
+                <a href="{{ "/" | prepend: site.baseurl }}"  onclick="$('#menu-close').click();"><img src="{{ site.logo_image_url | prepend: site.baseurl }}" width="75px"></a>
             </li>
             <li>
-                <a href="#top" onclick="$('#menu-close').click();">{{ site.menu_home }}</a>
+                <a href="{{ "/" | prepend: site.baseurl }}" onclick="$('#menu-close').click();">{{ site.menu_home }}</a>
             </li>
             <li>
-                <a href="#about" onclick="$('#menu-close').click();">{{ site.menu_about }}</a>
+                <a href="{{ "/#about" | prepend: site.baseurl }}" onclick="$('#menu-close').click();">{{ site.menu_about }}</a>
             </li>
             <li>
-                <a href="#services" onclick="$('#menu-close').click();">{{ site.menu_services }}</a>
+                <a href="{{ "/#services" | prepend: site.baseurl }}" onclick="$('#menu-close').click();">{{ site.menu_services }}</a>
             </li>
             <li>
-                <a href="#portfolio" onclick="$('#menu-close').click();">{{ site.menu_portfolio }}</a>
+                <a href="{{ "/portfolio" | prepend: site.baseurl }}" onclick="$('#menu-close').click();">{{ site.menu_portfolio }}</a>
             </li>
             <li>
-                <a href="{{ site.menu_contact_action }}" onclick="$('#menu-close').click();">{{ site.menu_contact }}</a>
+                <a href="{{ site.menu_contact_action | prepend: site.baseurl }}{{  }}" onclick="$('#menu-close').click();">{{ site.menu_contact }}</a>
             </li>
         </ul>
     </nav>
