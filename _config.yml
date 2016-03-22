@@ -49,6 +49,7 @@ menu_about: Sobre
 menu_services: Servi&ccedil;os
 menu_portfolio: Portf&oacute;lio
 menu_contact: Contato
+menu_contact_action: \#call-to-action # Accept any element id, but usually \#contact-form or \#map
 
 # Jumbotron properties
 jumbotron_short_text: >
