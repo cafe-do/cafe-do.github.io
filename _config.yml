@@ -58,6 +58,7 @@ jumbotron_video_poster_filename: /images/meeting-poster.jpg
 jumbotron_video_filename_webm:
 jumbotron_video_filename_mp4: /images/meeting.mp4
 jumbotron_video_filename_ogg:
+jumbotron_video_control_text: play | pause
 jumbotron_short_text: >
   Design, web, e fortalecimento de marca
 jumbotron_long_text:

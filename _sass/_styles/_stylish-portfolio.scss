@@ -192,6 +192,23 @@ hr.small {
     }
 }
 
+#jumbotron-video-control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    z-index: 100;
+    text-decoration: none;
+
+    span {
+        visibility: hidden;
+        position: relative;
+        top: -5px;
+        right: 5px;
+    }
+    &:hover span { visibility: visible; }
+}
+
 /* About */
 
 .about {

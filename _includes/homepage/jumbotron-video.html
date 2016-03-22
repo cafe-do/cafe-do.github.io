@@ -1,6 +1,7 @@
 {% if site.show_jumbotron_video %}
+<a id="jumbotron-video-control" href="#"><span class="label label-primary">{{ site.jumbotron_video_control_text }}</span> <i class="fa fa-2x fa-pause"></i></a>
 <div class="jumbotron-video">
-  <video autoplay muted loop {% if site.jumbotron_video_poster_filename %}poster="{{ site.jumbotron_video_poster_filename }}"{% endif %}>
+  <video id="jumbotron-video" autoplay muted loop {% if site.jumbotron_video_poster_filename %}poster="{{ site.jumbotron_video_poster_filename }}"{% endif %}>
   	{% if site.jumbotron_video_filename_webm %}<source src="{{ site.jumbotron_video_filename_webm | prepend: site.baseurl }}" type="video/mp4">{% endif %}
   	{% if site.jumbotron_video_filename_mp4 %}<source src="{{ site.jumbotron_video_filename_mp4 | prepend: site.baseurl }}" type="video/mp4">{% endif %}
   	{% if site.jumbotron_video_filename_ogg %}<source src="{{ site.jumbotron_video_filename_ogg | prepend: site.baseurl }}" type="video/ogg">{% endif %}  	
