@@ -16,7 +16,7 @@ url: "http://cafe-do.com" # the base hostname & protocol for your site
 
 # Show/Hide sections
 hide_company_name: true
-show_jumbotron: true
+show_jumbotron_video: true
 show_about: true
 show_services: true
 show_portfolio: true
@@ -51,6 +51,13 @@ menu_contact: Contato
 menu_contact_action: \#call-to-action # Accept any element id, but usually \#contact-form or \#map
 
 # Jumbotron properties
+# IMPORTANT: please change the position of your video in portrait mode
+# in the css rule '.jumbotron-video video @media (orientation: portrait)'
+jumbotron_background_image_filename: # should be empty when show_jumbotron_video: true
+jumbotron_video_poster_filename: /images/meeting-poster.jpg
+jumbotron_video_filename_webm:
+jumbotron_video_filename_mp4: /images/meeting.mp4
+jumbotron_video_filename_ogg:
 jumbotron_short_text: >
   Design, web, e fortalecimento de marca
 jumbotron_long_text:
