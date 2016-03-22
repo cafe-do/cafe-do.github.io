@@ -34,7 +34,6 @@ show_socialnetworks: true
 title: café-do | design, web, e fortalecimento de marca
 company_name: café-do
 logo_image_url: /images/logo.svg
-logo_image_width: 300
 email: contato@cafe-do.com
 phone_number: +55 (31) 3447-9878
 author: café-do | http://cafe-do.com
@@ -53,7 +52,7 @@ menu_contact_action: \#call-to-action # Accept any element id, but usually \#con
 
 # Jumbotron properties
 jumbotron_short_text: >
-  Design, web, e fortalecimento de marca.
+  Design, web, e fortalecimento de marca
 jumbotron_long_text:
 jumbotron_call_to_action: Descubra mais
 jumbotron_call_to_action_action: \#about

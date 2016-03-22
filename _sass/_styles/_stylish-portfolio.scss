@@ -162,7 +162,7 @@ hr.small {
     -o-background-size: cover;
 }
 
-.img-logo {
+.jumbotron-header .img-logo {
     width: 250px;
 
     @media (min-width: $screen-sm-min) {
@@ -212,6 +212,8 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+
+    a:hover, a:active { text-decoration: none; }
 }
 
 .img-portfolio {
@@ -248,4 +250,24 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+/* Post & Pages Styles */
+.site-header {
+    background-color: rgba(0,0,0,.8);
+    @include box-shadow(0 3px 3px rgba(0,0,0,.3));
+
+    .img-logo {
+        width: 150px;
+        margin: 15px;
+    }
+}
+
+.post {
+    margin-bottom: 50px;
+
+    .featured-image {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

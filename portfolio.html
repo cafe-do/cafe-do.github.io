@@ -1,12 +1,15 @@
-{% if site.show_portfolio %}
+---
+layout: page
+permalink: /portfolio/
+---
+
 <section id="portfolio" class="portfolio">
-  <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-xs-12 text-center">
         <h2>{{ site.portfolio_title }}</h2>
         <hr class="small">
         <div class="row">
-        {% for post in site.categories.jobs limit:4 %}
+        {% for post in site.categories.jobs %}
           <div class="col-md-6">
             <div class="portfolio-item">
               <a href="{{ post.url | prepend: site.baseurl }}">
@@ -19,12 +22,8 @@
         {% endfor %}
         </div>
         <!-- /.row (nested) -->
-      <a href="/portfolio" class="btn btn-dark">{{ site.portfolio_view_more }}</a>
     </div>
     <!-- /.col-lg-10 -->
     </div>
   <!-- /.row -->
-  </div>
-<!-- /.container -->
 </section>
-{% endif %}
