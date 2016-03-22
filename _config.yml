@@ -14,10 +14,25 @@ sass:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://cafe-do.com" # the base hostname & protocol for your site
 
+# Show/Hide sections
+hide_company_name: true
+show_jumbotron: true
+show_about: true
+show_services: true
+show_portfolio: true
+show_callout: true
+show_calltoaction: true
+show_map: false
+show_contact_form: true
+show_address: true
+show_phone_number: true
+show_email: true
+show_socialnetworks: true
+
+
 # Site properties
 title: café-do | design, web, e fortalecimento de marca
 company_name: café-do
-hide_company_name: true
 logo_image_url: /images/logo.svg
 logo_image_width: 300
 email: contato@cafe-do.com
@@ -51,7 +66,6 @@ about_text: >
 # Services properties
 services_title: Servi&ccedil;os
 services_action_text: saiba mais
-
 services_design_icon_class: fa-paint-brush
 services_design_title: design gr&aacute;fico
 services_design_text: >
@@ -59,7 +73,6 @@ services_design_text: >
   desde seu cart&atilde;o de visita, panfletos e flyers at&eacute; 
   silks para carros e outdoors
 services_design_action: /design-grafico
-
 services_web_icon_class: fa-cloud
 services_web_title: webdesign e sites
 services_web_text: >
@@ -68,13 +81,11 @@ services_web_text: >
   elementos gr&aacute;ficos e escrevemos linhas de c&oacute;digo, mas 
   fazemos seu visitante amar seu site
 services_web_action: /web
-
 services_branding_icon_class: fa-shield
 services_branding_title: fortalecimento de marcas
 services_branding_text: >
   ajudamos a fortalecer sua marca no mercado pensando com
   criatividade para sua marca alcan&ccedil;ar novos clientes
-
 services_branding_action: /branding
 
 # Portfolio properties
@@ -89,7 +100,7 @@ calltoaction_title: Tem um projeto para ser executado?
 calltoaction_text: > 
   Preencha o formul&aacute;rio e entraremos em contato... 
   n&atilde;o demora mais que colocar a &aacute;gua pra ferver!
-calltoaction_button_text: Preencher forml&aacute;rio
+calltoaction_button_text: Preencher formul&aacute;rio
 calltoaction_button_class: btn-dark # accept any bootstrap button style class, but usually 'btn-dark' or 'btn-light'
 calltoaction_button_action: https://docs.google.com/forms/d/10aivslAIEKK7CPpZ25d7ggk5T3SeTLg6cVqXZq03Gp4/viewform
 calltoaction_button_target: _blank

@@ -1,54 +1,25 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <h3 class="text-center">{{ site.contact_form_title }}</h3>
-        <form class="form-horizontal" action="//formspree.io/{{ site.email }}" method="POST">
-        <fieldset>
-          <div class="form-group">
-            <label for="contact-name" class="col-lg-2 control-label">{{ site.contact_form_name_label }}</label>
-            <div class="col-lg-10">
-              <input id="contact-name" name="Nome" type="text" class="form-control" placeholder="{{ site.contact_form_name_placeholder }}">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="contact-email" class="col-lg-2 control-label">{{ site.contact_form_email_label }}</label>
-            <div class="col-lg-10">
-              <input id="contact-email" name="_replyto" type="text" class="form-control" placeholder="{{ site.contact_form_email_placeholder }}">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="contact-message" class="col-lg-2 control-label">{{ site.contact_form_message_label }}</label>
-            <div class="col-lg-10">
-              <textarea id="contact-message" name="Mensagem:" class="form-control" rows="6" ></textarea>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="text-center">
-              <button type="reset" class="btn btn-default">{{ site.contact_form_reset_button_text }}</button>
-              <button type="submit" class="btn btn-success">{{ site.contact_form_send_button_text }}</button>
-            </div>
-          </div>
-        </fieldset>
-      </form>
-      </div>
       <div class="col-lg-10 col-lg-offset-1 text-center">
+        {% if site.show_address %}
         <h4><strong>{{ site.address_title }}</strong></h4>
         <p>
           {{ site.address_line1 }}
           {% if site.address_line2 %}<br>{{ site.address_line2 }}{% endif %}
           {% if site.address_line3 %}<br>{{ site.address_line3 }}{% endif %}
         </p>
+        {% endif %}
         <ul class="list-unstyled">
-          {% if site.phone_number %}
+          {% if site.show_phone_number %}
             <li><i class="fa fa-phone fa-fw"></i> <a href="tel:{{ site.phone_number }}">{{ site.phone_number }}</a></li>
           {% endif %}
-          {% if site.email %}
+          {% if site.show_email %}
           <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {% endif %}
         </ul>
         <br>
+        {% if site.show_socialnetworks %}
         <ul class="list-inline">
           {% if site.facebook_username %}
           <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>
@@ -60,6 +31,7 @@
           <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a></li>
           {% endif %}
         </ul>
+        {% endif %}
         <hr class="small">
         <p class="text-muted">{{ site.copyright_text }} {{ site.company_name }} {{ site.time | date: "%Y" }}</p>
       </div>
