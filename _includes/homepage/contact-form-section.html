@@ -4,19 +4,19 @@
     <div class="row">
       <div class="col-sm-8 col-sm-offset-2">
         <h3 class="text-center">{{ site.contact_form_title }}</h3>
-        <form class="form-horizontal" action="//formspree.io/{{ site.email }}" method="POST">
+        <form id="contact-email-form" class="form-horizontal">
         <fieldset>
           <div class="form-group">
             <label for="contact-name" class="col-lg-2 control-label">{{ site.contact_form_name_label }}</label>
             <div class="col-lg-10">
-              <input id="contact-name" name="Nome" type="text" class="form-control" placeholder="{{ site.contact_form_name_placeholder }}">
+              <input id="contact-name" name="Nome" type="text" class="form-control" required placeholder="{{ site.contact_form_name_placeholder }}">
             </div>
           </div>
 
           <div class="form-group">
             <label for="contact-email" class="col-lg-2 control-label">{{ site.contact_form_email_label }}</label>
             <div class="col-lg-10">
-              <input id="contact-email" name="_replyto" type="text" class="form-control" placeholder="{{ site.contact_form_email_placeholder }}">
+              <input id="contact-email" name="_replyto" type="text" class="form-control" required placeholder="{{ site.contact_form_email_placeholder }}">
             </div>
           </div>
           <div class="form-group">
@@ -26,9 +26,11 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="text-center">
-              <button type="reset" class="btn btn-default">{{ site.contact_form_reset_button_text }}</button>
-              <button type="submit" class="btn btn-success">{{ site.contact_form_send_button_text }}</button>
+            <div id="controls" class="text-center">
+              <input type="hidden" name="_subject" value="Contato via {{ site.url }}">
+              <input type="text" name="_gotcha" class="hidden" />
+              <button id="btn-reset" type="reset" class="btn btn-default">reset</button>
+              <button id="btn-submit" type="submit" class="btn btn-success">send</button>
             </div>
           </div>
         </fieldset>

@@ -1,6 +1,41 @@
 <script src="{{ "/js/jquery-2.2.1.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/cafe-do.js" | prepend: site.baseurl }}"></script>
+{% if site.show_contact_form %}
+<script type="text/javascript">
+  (function() {
+      var $contactForm = jQuery('#contact-email-form');
+      $contactForm.submit(function(e) {
+          e.preventDefault();
+          jQuery.ajax({
+              url: 'https://formspree.io/{{ site.email }}',
+              method: 'POST',
+              data: $(this).serialize(),
+              dataType: 'json',
+              beforeSend: function() {
+                  $contactForm.find('#controls')
+                    .append('<div class="message"><i class="fa fa-circle-o-notch fa-spin"></i><div>')
+                    .find("#btn-submit").prop('disabled', true);
+              },
+              success: function(data) {
+                  $contactForm.find('.message').remove();
+                  $contactForm.each(function(){ this.reset(); });
+                  $contactForm
+                    .append('<div class="message alert alert-dismissible alert-success">Mensagem enviada!</div>')
+                    .find("#btn-submit").prop('disabled', false);
+              },
+              error: function(err) {
+                  $contactForm.find('.message').remove();
+                  $contactForm
+                    .append('<div class="message alert alert-dismissible alert-danger">Ops, ocorreu um erro. Por favor, envie sua mensagem por o e-mail à <a href="mailto:{{ site.email }}>{{ site.email }}</a>".</div>')
+                    .find("#btn-submit").prop('disabled', false);
+              }
+          });
+      });
+  })();
+</script>
+{% endif %}
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
